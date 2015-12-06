@@ -1,0 +1,104 @@
+[-0.000][INFO]:     ChromeDriver 23.0.1240.0 C:\git\UMP\UMP-Portlet\UMP_Automation\UMP-Admin-Automation\src\ExternalJars\chromedriver_win_23.0.1240.0\chromedriver.exe
+[1.154][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "chrome.switches": [  ],
+   "chromeOptions": {
+      "args": [  ],
+      "extensions": [  ]
+   },
+   "platform": "ANY",
+   "version": ""
+}
+
+[1.154][INFO]:      Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --enable-logging --log-level=1 --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --ignore-certificate-errors about:blank
+[1.454][INFO]:      Connected to Chrome successfully. Version: 23.0.1271.95
+[1.472][FINE]:      Command received (/session/71761262945c33bc39f849dbaa8db888)
+[1.472][FINE]:      Command finished (/session/71761262945c33bc39f849dbaa8db888) with response {
+   "sessionId": "71761262945c33bc39f849dbaa8db888",
+   "status": 0,
+   "value": {
+      "acceptSslCerts": false,
+      "applicationCacheEnabled": false,
+      "browserConnectionEnabled": false,
+      "browserName": "chrome",
+      "chrome.chromedriverVersion": "23.0.1240.0",
+      "chrome.nativeEvents": false,
+      "cssSelectorsEnabled": true,
+      "databaseEnabled": false,
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "locationContextEnabled": false,
+      "nativeEvents": true,
+      "platform": "windows",
+      "rotatable": false,
+      "takesScreenshot": true,
+      "version": "23.0.1271.95",
+      "webStorageEnabled": true
+   }
+}
+
+[1.490][FINE]:      Command received (/session/71761262945c33bc39f849dbaa8db888/window/current/maximize) with params {
+   "windowHandle": "current"
+}
+
+[1.490][FINER]:     Waiting for all views to stop loading...
+[1.490][FINER]:     Done waiting for all views to stop loading
+[1.493][FINER]:     Waiting for all views to stop loading...
+[1.495][FINER]:     Done waiting for all views to stop loading
+[1.496][FINE]:      Command finished (/session/71761262945c33bc39f849dbaa8db888/window/current/maximize) with response {
+   "sessionId": "71761262945c33bc39f849dbaa8db888",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[1.501][FINE]:      Command received (/session/71761262945c33bc39f849dbaa8db888/timeouts/implicit_wait) with params {
+   "ms": 60000
+}
+
+[1.501][FINER]:     Waiting for all views to stop loading...
+[1.503][FINER]:     Done waiting for all views to stop loading
+[1.503][FINER]:     Waiting for all views to stop loading...
+[1.503][FINER]:     Done waiting for all views to stop loading
+[1.503][FINE]:      Command finished (/session/71761262945c33bc39f849dbaa8db888/timeouts/implicit_wait) with response {
+   "sessionId": "71761262945c33bc39f849dbaa8db888",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[1.507][FINE]:      Command received (/session/71761262945c33bc39f849dbaa8db888/url) with params {
+   "url": "http://qump-appso1.dc1.beachbody.com:8080/home"
+}
+
+[1.507][FINER]:     Waiting for all views to stop loading...
+[1.507][FINER]:     Done waiting for all views to stop loading
+[6.883][FINER]:     Waiting for all views to stop loading...
+[7.919][FINER]:     Done waiting for all views to stop loading
+[7.919][FINE]:      Command finished (/session/71761262945c33bc39f849dbaa8db888/url) with response {
+   "sessionId": "71761262945c33bc39f849dbaa8db888",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[7.927][FINE]:      Command received (/session/71761262945c33bc39f849dbaa8db888/element) with params {
+   "using": "css selector",
+   "value": "li.sign-in \u003E a"
+}
+
+[7.927][FINER]:     Waiting for all views to stop loading...
+[7.927][FINER]:     Done waiting for all views to stop loading
+[67.945][FINER]:    Waiting for all views to stop loading...
+[67.945][FINER]:    Done waiting for all views to stop loading
+[67.945][WARNING]:  Command finished (/session/71761262945c33bc39f849dbaa8db888/element) with response {
+   "sessionId": "71761262945c33bc39f849dbaa8db888",
+   "status": 7,
+   "value": {
+      "message": "The element could not be found"
+   }
+}
+

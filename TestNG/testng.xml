@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite1">  
+  <test name="Test1">
+
+	<classes>
+	
+	<!-- 	<class name="Xebia.TestNG1.App"></class> -->
+		<class name="Xebia.TestNG1.AppTest"></class>
+	</classes>
+
+   
+   </test>
+</suite> 
+

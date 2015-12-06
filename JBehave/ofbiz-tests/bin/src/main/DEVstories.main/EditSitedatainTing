@@ -1,0 +1,22 @@
+
+Scenario: Edit site data in Ting
+
+Given that I logged into Ting site
+When I click "Clients"
+Then I click "Sites"
+And I click "Search Sites"
+And I add "VirginBlue" as the "siteName"
+And I click "Search" button
+And I click to open "VirginBlue" site details page
+And I click "Edit" button
+And I add "VirginBlueTest" as the "siteName"
+And I add "virginbluetest" as "sitePrefix"
+And I click "Save" button
+And I see Updated successfully
+
+
+
+
+
+
+

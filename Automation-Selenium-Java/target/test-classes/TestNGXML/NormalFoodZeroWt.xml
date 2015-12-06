@@ -1,0 +1,251 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="UMP" verbose="2" parallel="false" thread-count="1">
+
+
+    <test name="Create Food with NORMAL CUP as PMU with ZERO WT" preserve-order="true">
+    	<classes>
+  			 <class name="FoodScripts.TestFoodCreate"></class>	
+  			    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testCreateFood"></include></methods>
+  		 	 <class name="FoodScripts.TestFoodSuperAdmin"></class>	
+  		 	    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testSuperAdmin"></include></methods>
+  		     <class name="FoodScripts.TestFoodDeducedMeasureUnits"></class>	
+  		 	    <methods><include name="testDMUOfCupZeroWt"></include></methods>	
+  		     <class name="FoodScripts.TestFoodEdit"></class>	
+  		     	<parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 	    <methods><include name="testEditFoodScreen"></include></methods>
+  		</classes>
+   </test> 
+
+
+  
+     <test name="Create Food with NORMAL ML as PMU with ZERO WT" preserve-order="true">
+    	<classes>
+  			 <class name="FoodScripts.TestFoodCreate"></class>	
+  			    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testCreateFood"></include></methods>
+  		 	 <class name="FoodScripts.TestFoodSuperAdmin"></class>	
+  		 	    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testSuperAdmin"></include></methods>
+  		     <class name="FoodScripts.TestFoodDeducedMeasureUnits"></class>	
+  		 	    <methods><include name="testDMUOfMlZeroWt"></include></methods>	
+  		     <class name="FoodScripts.TestFoodEdit"></class>	
+  		     	<parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 	    <methods><include name="testEditFoodScreen"></include></methods>
+  		</classes>
+   </test> 
+   
+   
+ <test name="Create Food with NORMAL TSP as PMU with ZERO WT" preserve-order="true">
+     	<classes>
+  			 <class name="FoodScripts.TestFoodCreate"></class>	
+  			    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testCreateFood"></include></methods>
+  		 	 <class name="FoodScripts.TestFoodSuperAdmin"></class>	
+  		 	    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testSuperAdmin"></include></methods>
+  		     <class name="FoodScripts.TestFoodDeducedMeasureUnits"></class>	
+  		 	    <methods><include name="testDMUOfTspZeroWt"></include></methods>	
+  		     <class name="FoodScripts.TestFoodEdit"></class>	
+  		     	<parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 	    <methods><include name="testEditFoodScreen"></include></methods>
+  		</classes>
+   </test> 
+   
+   <test name="Create Food with NORMAL PINCH as PMU with ZERO WT" preserve-order="true">
+     	<classes>
+  			 <class name="FoodScripts.TestFoodCreate"></class>	
+  			    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testCreateFood"></include></methods>
+  		 	 <class name="FoodScripts.TestFoodSuperAdmin"></class>	
+  		 	    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testSuperAdmin"></include></methods>
+  		     <class name="FoodScripts.TestFoodDeducedMeasureUnits"></class>	
+  		 	    <methods><include name="testDMUOfPinchZeroWt"></include></methods>	
+  		     <class name="FoodScripts.TestFoodEdit"></class>	
+  		     	<parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 	    <methods><include name="testEditFoodScreen"></include></methods>
+  		</classes>
+   </test>
+   
+   
+  <test name="Create Food with NORMAL DASH as PMU with ZERO WT" preserve-order="true">
+     	<classes>
+  			 <class name="FoodScripts.TestFoodCreate"></class>	
+  			    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testCreateFood"></include></methods>
+  		 	 <class name="FoodScripts.TestFoodSuperAdmin"></class>	
+  		 	    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testSuperAdmin"></include></methods>
+  		     <class name="FoodScripts.TestFoodDeducedMeasureUnits"></class>	
+  		 	    <methods><include name="testDMUOfDashZeroWt"></include></methods>	
+  		     <class name="FoodScripts.TestFoodEdit"></class>	
+  		     	<parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 	    <methods><include name="testEditFoodScreen"></include></methods>
+  		</classes>
+   </test>
+   
+   
+   
+  <test name="Create Food with NORMAL TBSP as PMU with ZERO WT" preserve-order="true">
+     	<classes>
+  			 <class name="FoodScripts.TestFoodCreate"></class>	
+  			    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testCreateFood"></include></methods>
+  		 	 <class name="FoodScripts.TestFoodSuperAdmin"></class>	
+  		 	    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testSuperAdmin"></include></methods>
+  		     <class name="FoodScripts.TestFoodDeducedMeasureUnits"></class>	
+  		 	    <methods><include name="testDMUOfTbspZeroWt"></include></methods>	
+  		     <class name="FoodScripts.TestFoodEdit"></class>	
+  		     	<parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 	    <methods><include name="testEditFoodScreen"></include></methods>
+  		</classes>
+   </test>
+  
+  
+    <test name="Create Food with NORMAL FLOZ as PMU with ZERO WT" preserve-order="true">
+     	<classes>
+  			 <class name="FoodScripts.TestFoodCreate"></class>	
+  			    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testCreateFood"></include></methods>
+  		 	 <class name="FoodScripts.TestFoodSuperAdmin"></class>	
+  		 	    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testSuperAdmin"></include></methods>
+  		     <class name="FoodScripts.TestFoodDeducedMeasureUnits"></class>	
+  		 	    <methods><include name="testDMUOfFlozZeroWt"></include></methods>	
+  		     <class name="FoodScripts.TestFoodEdit"></class>	
+  		     	<parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 	    <methods><include name="testEditFoodScreen"></include></methods>
+  		</classes>
+   </test>
+   
+   
+   
+   <test name="Create Food with NORMAL PINT as PMU with ZERO WT" preserve-order="true">
+     	<classes>
+  			 <class name="FoodScripts.TestFoodCreate"></class>	
+  			    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testCreateFood"></include></methods>
+  		 	 <class name="FoodScripts.TestFoodSuperAdmin"></class>	
+  		 	    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testSuperAdmin"></include></methods>
+  		     <class name="FoodScripts.TestFoodDeducedMeasureUnits"></class>	
+  		 	    <methods><include name="testDMUOfPntZeroWt"></include></methods>	
+  		     <class name="FoodScripts.TestFoodEdit"></class>	
+  		     	<parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 	    <methods><include name="testEditFoodScreen"></include></methods>
+  		</classes>
+   </test>
+   
+   
+   
+   <test name="Create Food with NORMAL QT as PMU with ZERO WT" preserve-order="true">
+     	<classes>
+  			 <class name="FoodScripts.TestFoodCreate"></class>	
+  			    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testCreateFood"></include></methods>
+  		 	 <class name="FoodScripts.TestFoodSuperAdmin"></class>	
+  		 	    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testSuperAdmin"></include></methods>
+  		     <class name="FoodScripts.TestFoodDeducedMeasureUnits"></class>	
+  		 	    <methods><include name="testDMUOfQtZeroWt"></include></methods>	
+  		     <class name="FoodScripts.TestFoodEdit"></class>	
+  		     	<parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 	    <methods><include name="testEditFoodScreen"></include></methods>
+  		</classes>
+   </test>
+   
+   
+   
+   <test name="Create Food with NORMAL LITER as PMU with ZERO WT" preserve-order="true">
+     	<classes>
+  			 <class name="FoodScripts.TestFoodCreate"></class>	
+  			    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testCreateFood"></include></methods>
+  		 	 <class name="FoodScripts.TestFoodSuperAdmin"></class>	
+  		 	    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testSuperAdmin"></include></methods>
+  		     <class name="FoodScripts.TestFoodDeducedMeasureUnits"></class>	
+  		 	    <methods><include name="testDMUOfLiterZeroWt"></include></methods>	
+  		     <class name="FoodScripts.TestFoodEdit"></class>	
+  		     	<parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 	    <methods><include name="testEditFoodScreen"></include></methods>
+  		</classes>
+   </test>
+  
+  
+  
+  
+   <test name="Create Food with NORMAL GALLON as PMU with ZERO WT" preserve-order="true">
+     <classes>
+  		 	 <class name="FoodScripts.TestFoodCreate"></class>	
+  			    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testCreateFood"></include></methods>
+  		 	 <class name="FoodScripts.TestFoodSuperAdmin"></class>	
+  		 	    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testSuperAdmin"></include></methods>
+  		     <class name="FoodScripts.TestFoodDeducedMeasureUnits"></class>	
+  		 	    <methods><include name="testDMUOfGallonZeroWt"></include></methods>	
+  		     <class name="FoodScripts.TestFoodEdit"></class>	
+  		     	<parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 	    <methods><include name="testEditFoodScreen"></include></methods>
+  		</classes>
+   </test>
+   
+   
+   <test name="Create Food with NORMAL GRAM as PMU with ZERO WT" preserve-order="true">
+     	<classes>
+  			 <class name="FoodScripts.TestFoodCreate"></class>	
+  			    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testCreateFood"></include></methods>
+  		 	 <class name="FoodScripts.TestFoodSuperAdmin"></class>	
+  		 	    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testSuperAdmin"></include></methods>
+  		     <class name="FoodScripts.TestFoodDeducedMeasureUnits"></class>	
+  		 	    <methods><include name="testDMUOfG"></include></methods>	
+  		     <class name="FoodScripts.TestFoodEdit"></class>	
+  		     	<parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 	    <methods><include name="testEditFoodScreen"></include></methods>
+  		</classes>
+   </test>
+   
+   
+   
+   <test name="Create Food with NORMAL OZ as PMU with ZERO WT" preserve-order="true">
+     	<classes>
+  			 <class name="FoodScripts.TestFoodCreate"></class>	
+  			    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testCreateFood"></include></methods>
+  		 	 <class name="FoodScripts.TestFoodSuperAdmin"></class>	
+  		 	    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testSuperAdmin"></include></methods>
+  		     <class name="FoodScripts.TestFoodDeducedMeasureUnits"></class>	
+  		 	    <methods><include name="testDMUOfOz"></include></methods>	
+  		     <class name="FoodScripts.TestFoodEdit"></class>	
+  		     	<parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 	    <methods><include name="testEditFoodScreen"></include></methods>
+  		</classes>
+   </test>
+   
+   
+   <test name="Create Food with NORMAL LB as PMU with ZERO WT" preserve-order="true">
+     	<classes>
+  			 <class name="FoodScripts.TestFoodCreate"></class>	
+  			    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testCreateFood"></include></methods>
+  		 	 <class name="FoodScripts.TestFoodSuperAdmin"></class>	
+  		 	    <parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 		<methods><include name="testSuperAdmin"></include></methods>
+  		     <class name="FoodScripts.TestFoodDeducedMeasureUnits"></class>	
+  		 	    <methods><include name="testDMUOfLb"></include></methods>	
+  		     <class name="FoodScripts.TestFoodEdit"></class>	
+  		     	<parameter name ="sheetName" value="NormalFoodZeroWt" />
+  		 	    <methods><include name="testEditFoodScreen"></include></methods>
+  		</classes>
+   </test> 
+    
+</suite>
+

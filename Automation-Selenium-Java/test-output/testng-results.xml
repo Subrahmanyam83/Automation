@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="UMP" duration-ms="48524" started-at="2012-12-03T12:01:33Z" finished-at="2012-12-03T12:02:21Z">
+    <groups>
+    </groups>
+    <test name="Create Food with CUP as PMU and ML as AMU" duration-ms="48524" started-at="2012-12-03T12:01:33Z" finished-at="2012-12-03T12:02:21Z">
+      <class name="FoodScripts.TestFoodDeducedMeasureUnits">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:FoodScripts.TestFoodDeducedMeasureUnits@11cb14a]" name="BeforeMethod" is-config="true" duration-ms="1" started-at="2012-12-03T17:31:57Z" finished-at="2012-12-03T17:31:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="testCupAsPmuDashAsAmu()[pri:0, instance:FoodScripts.TestFoodDeducedMeasureUnits@11cb14a]" name="testCupAsPmuDashAsAmu" duration-ms="1565" started-at="2012-12-03T17:31:57Z" finished-at="2012-12-03T17:31:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCupAsPmuDashAsAmu -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:FoodScripts.TestFoodDeducedMeasureUnits@11cb14a]" name="AfterMethod" is-config="true" duration-ms="9349" started-at="2012-12-03T17:31:58Z" finished-at="2012-12-03T17:32:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+      </class> <!-- FoodScripts.TestFoodDeducedMeasureUnits -->
+      <class name="FoodScripts.TestFoodSuperAdmin">
+        <test-method status="PASS" signature="startWebdriverSession()[pri:0, instance:FoodScripts.TestFoodSuperAdmin@186bc70]" name="startWebdriverSession" is-config="true" duration-ms="1" started-at="2012-12-03T17:31:43Z" finished-at="2012-12-03T17:31:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebdriverSession -->
+        <test-method status="PASS" signature="testSuperAdmin(java.lang.String)[pri:0, instance:FoodScripts.TestFoodSuperAdmin@186bc70]" name="testSuperAdmin" duration-ms="13373" started-at="2012-12-03T17:31:43Z" finished-at="2012-12-03T17:31:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AMU]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuperAdmin -->
+        <test-method status="PASS" signature="stopWebdriverSession()[pri:0, instance:FoodScripts.TestFoodSuperAdmin@186bc70]" name="stopWebdriverSession" is-config="true" duration-ms="0" started-at="2012-12-03T17:31:57Z" finished-at="2012-12-03T17:31:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopWebdriverSession -->
+      </class> <!-- FoodScripts.TestFoodSuperAdmin -->
+      <class name="FoodScripts.TestFoodCreate">
+        <test-method status="PASS" signature="startWebdriverSession()[pri:0, instance:FoodScripts.TestFoodCreate@ab1d1b]" name="startWebdriverSession" is-config="true" duration-ms="168227" started-at="2012-12-03T17:28:45Z" finished-at="2012-12-03T17:31:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebdriverSession -->
+        <test-method status="PASS" signature="incrementRowNumber()[pri:0, instance:FoodScripts.TestFoodCreate@ab1d1b]" name="incrementRowNumber" is-config="true" duration-ms="0" started-at="2012-12-03T17:31:33Z" finished-at="2012-12-03T17:31:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incrementRowNumber -->
+        <test-method status="PASS" signature="testCreateFood(java.lang.String)[pri:0, instance:FoodScripts.TestFoodCreate@ab1d1b]" name="testCreateFood" duration-ms="10449" started-at="2012-12-03T17:31:33Z" finished-at="2012-12-03T17:31:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AMU]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateFood -->
+        <test-method status="PASS" signature="stopWebdriverSession()[pri:0, instance:FoodScripts.TestFoodCreate@ab1d1b]" name="stopWebdriverSession" is-config="true" duration-ms="0" started-at="2012-12-03T17:31:43Z" finished-at="2012-12-03T17:31:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopWebdriverSession -->
+      </class> <!-- FoodScripts.TestFoodCreate -->
+      <class name="FoodScripts.TestFoodEdit">
+        <test-method status="PASS" signature="testEditFoodScreen(java.lang.String)[pri:0, instance:FoodScripts.TestFoodEdit@1ecab7c]" name="testEditFoodScreen" duration-ms="13768" started-at="2012-12-03T17:32:08Z" finished-at="2012-12-03T17:32:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AMU]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditFoodScreen -->
+        <test-method status="PASS" signature="startWebdriverSession()[pri:0, instance:FoodScripts.TestFoodEdit@1ecab7c]" name="startWebdriverSession" is-config="true" duration-ms="0" started-at="2012-12-03T17:32:08Z" finished-at="2012-12-03T17:32:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebdriverSession -->
+      </class> <!-- FoodScripts.TestFoodEdit -->
+    </test> <!-- Create Food with CUP as PMU and ML as AMU -->
+  </suite> <!-- UMP -->
+</testng-results>

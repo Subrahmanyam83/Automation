@@ -1,0 +1,24 @@
+
+
+Scenario: Create site data in Ting
+
+Given I logged in to ofbiz as a catalog manager
+When I click "Web Tools" link
+Then I click "Service Engine" from left navigation
+And I click "updatePayment" service
+And I click "Run Service" under service
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

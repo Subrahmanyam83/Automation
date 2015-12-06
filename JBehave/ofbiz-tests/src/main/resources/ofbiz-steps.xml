@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="selenium" class="com.thoughtworks.selenium.DefaultSelenium"
+		init-method="start" destroy-method="stop" lazy-init="true">
+		<constructor-arg>
+			<bean class="com.thoughtworks.selenium.HttpCommandProcessor">
+				<constructor-arg value="localhost" />
+				<constructor-arg value="4444" />
+				<!-- <constructor-arg value="*firefox /Applications/Firefox7.app/Contents/MacOS/firefox-bin"/> -->
+				<constructor-arg value="*googlechrome" />
+				<constructor-arg value="http://google.com" />
+			</bean>
+		</constructor-arg>
+	</bean>
+
+	<bean id="conditionRunner" class="org.jbehave.web.selenium.SeleniumConfiguration"
+		factory-method="defaultConditionRunner">
+		<constructor-arg ref="selenium" />
+	</bean>
+
+	<bean id="homeBean" class="com.rb.ofbiz.test.pages.catalog.OFBizHome">
+		<constructor-arg type="com.thoughtworks.selenium.Selenium"
+			index="0" ref="selenium" />
+		<constructor-arg index="1" ref="conditionRunner" />
+		<property name="sqldb" value="${ting.sqldb}" />
+		<property name="rbdbuser" value="${ting.rbdbuser}" />
+		<property name="rbdbpasswd" value="${ting.rbdbpasswd}" />
+		<property name="ofbizdbHost" value="${ofbiz.postgredbhost}" />
+		<property name="ofbizdbUsername" value="${ofbiz.postgredbusername}" />
+		<property name="ofbizdbPassword" value="${ofbiz.postgredbpassword}" />
+		<!-- <property name="loadtime" value="${selenium.loadtime}"/> -->
+	</bean>
+
+	<bean id="ofbizDbBean" class="com.rb.ofbiz.test.pages.catalog.OfBizDb">
+		<constructor-arg type="com.thoughtworks.selenium.Selenium"
+			index="0" ref="selenium" />
+		<constructor-arg index="1" ref="conditionRunner" />
+		<property name="ofbizdbHost" value="${ofbiz.postgredbhost}" />
+		<property name="ofbizdbUsername" value="${ofbiz.postgredbusername}" />
+		<property name="ofbizdbPassword" value="${ofbiz.postgredbpassword}" />
+	</bean>
+
+	<bean id="pageFactory" class="com.rb.ofbiz.test.pages.SeleniumPageFactory">
+		<property name="home" ref="homeBean" />
+		<property name="db" ref="ofbizDbBean" />
+	</bean>
+
+	<bean id="dbSteps" class="com.rb.ofbiz.test.steps.DBSteps">
+		<constructor-arg ref="pageFactory" />
+	</bean>
+
+	<bean id="auditSteps" class="com.rb.ofbiz.test.steps.AuditSteps">
+		<constructor-arg ref="pageFactory" />
+	</bean>
+
+    <bean id="loadSteps" class="com.rb.ofbiz.test.steps.LoadSteps">
+        <constructor-arg ref="pageFactory" />
+    </bean>
+
+	<bean id="searchSteps" class="com.rb.ofbiz.test.steps.SearchSteps">
+		<constructor-arg ref="pageFactory" />
+		<property name="ofbizusername" value="${ofbiz.username}" />
+		<property name="ofbizpassword" value="${ofbiz.password}" />
+		<property name="hostname" value="${ofbiz.hostname}" />
+		<property name="port" value="${ofbiz.port}" />
+	</bean>
+
+	<bean id="addproductSteps" class="com.rb.ofbiz.test.steps.AddProductSteps">
+		<constructor-arg ref="pageFactory" />
+		<property name="hostname" value="${ofbiz.hostname}" />
+		<property name="port" value="${ofbiz.port}" />
+	</bean>
+
+	<bean id="tingSteps" class="com.rb.ofbiz.test.steps.TingSteps">
+		<constructor-arg ref="pageFactory" />
+		<property name="username" value="${ting.username}" />
+		<property name="password" value="${ting.password}" />
+		<property name="tingUrl" value="${ting.url}" />
+	</bean>
+
+	<bean id="supplierSteps" class="com.rb.ofbiz.test.steps.SupplierSteps">
+		<constructor-arg ref="pageFactory" />
+	</bean>
+
+	<bean id="commonSteps" class="com.rb.ofbiz.test.steps.CommonSteps">
+		<constructor-arg ref="pageFactory" />
+		<property name="hostname" value="${ofbiz.hostname}" />
+		<property name="port" value="${ofbiz.port}" />
+	</bean>
+
+	<bean id="orderSteps" class="com.rb.ofbiz.test.steps.OrderSteps">
+		<constructor-arg ref="pageFactory" />
+		<property name="c_url" value="${consumer.c_url}" />
+		<property name="application" value="ordermgr" />
+		<property name="ofbizusername" value="${ofbiz.username}" />
+		<property name="ofbizpassword" value="${ofbiz.password}" />
+		<property name="hostname" value="${ofbiz.hostname}" />
+		<property name="port" value="${ofbiz.port}" />
+	</bean>
+
+
+
+	<bean id="SeleniumScreenshotOnFailure" class="org.jbehave.web.selenium.SeleniumScreenshotOnFailure">
+		<constructor-arg ref="selenium" />
+	</bean>
+
+	<bean id="customerSteps" class="com.rb.ofbiz.test.steps.CustomerSteps">
+		<constructor-arg ref="pageFactory" />
+		<property name="hostname" value="${ofbiz.hostname}" />
+		<property name="port" value="${ofbiz.port}" />
+	</bean>
+
+</beans>

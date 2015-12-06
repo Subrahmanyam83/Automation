@@ -1,0 +1,48 @@
+
+
+Scenario: Search Product in of biz - Product name
+
+Given that I logged into ofbiz site
+When I click "Search" link
+Then I see Product Search
+And I enter the <searchterm> in the search text box
+And I click on search
+And I check the value of the "Name" as "Stunt Driving Experience"
+
+Examples:
+|searchterm|
+|FFFFFF|
+
+
+Scenario: Search Product in of biz - Product name
+
+
+Given that I logged into ofbiz site
+When I click "Search" link
+Then I see Product Search
+And I enter the <searchterm> in the search text box
+And I click on search
+And I check the value of the "Name" as "Stunt Driving Experience"
+
+Examples:
+|searchterm|
+|DDS3EG|
+
+Scenario: Search Product in ofbiz - Verify ProductName and SupplierName
+
+Given that I logged into ofbiz site
+When I click "Search" link
+Then I see Product Search
+And I enter the <searchterm> in the search text box
+And I click on search
+And I should see "1 results"
+And I should see <productname>
+And I should see <suppliername>
+And I should see <productcode>
+
+Examples:
+|searchterm|productname|suppliername|productcode|
+|BBA|Scenic Flight and Hunter Valley Wine Tour for 4| Australia by Air|BBA001|
+
+
+

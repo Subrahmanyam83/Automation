@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="31" started-at="2012-12-02T15:30:33Z" finished-at="2012-12-02T15:30:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="31" started-at="2012-12-02T15:30:33Z" finished-at="2012-12-02T15:30:33Z">
+      <class name="Xebia.TestNG1.App">
+        <test-method status="PASS" signature="abcd()[pri:0, instance:Xebia.TestNG1.App@78b4c4]" name="abcd" duration-ms="15" started-at="2012-12-02T21:00:33Z" finished-at="2012-12-02T21:00:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abcd -->
+      </class> <!-- Xebia.TestNG1.App -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

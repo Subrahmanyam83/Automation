@@ -1,0 +1,46 @@
+
+Scenario: Search Supplier in Alfred
+
+Given that I logged into ofbiz site
+When I click "SupplierSearch" link under Supplier
+Then I see Supplier Search
+And I enter the <searchterm> in the search text box
+And I click on search
+And I should see "Found 1 results"
+And I select <activestatus>
+And I select <publishstatus>
+And I select <countrystatus>
+And I should see <numberofresults> text
+And I verify the status of <activestatus>
+And I verify the status of <publishstatus>
+And I verify the status of <countrystatus>
+
+
+Examples:
+|searchterm|activestatus|publishstatus|countrystatus|numberofresults|
+|Test Supplier for Skin|All Active/Inactive|All Published/Unpublished Products|All Countries|Found 1 results|
+|Test Supplier for Skin|All Active/Inactive|Has Published Products|Australia|Found 1 results|
+|Test Supplier for Skin|All Active/Inactive|Has Published Products|New Zealand|Found 0 results|
+
+Scenario: Search Supplier in Alfred
+
+Given that I logged into ofbiz site
+When I click "SupplierSearch" link under Supplier
+Then I see Supplier Search
+And I enter the <searchterm> in the search text box
+And I click on search
+And I should see "Found 1 results"
+And I select <activestatus>
+And I select <publishstatus>
+And I select <countrystatus>
+And I should see <numberofresults> text
+And I verify the status of <activestatus>
+And I verify the status of <publishstatus>
+And I verify the status of <countrystatus>
+
+Examples:
+|searchterm|activestatus|publishstatus|countrystatus|numberofresults|
+|Test Forest Adventures|All Active/Inactive|All Published/Unpublished Products|All Countries|Found 1 results|
+|Test Forest Adventures|Inactive|Has Published Products|New Zealand|Found 0 results|
+|Test Forest Adventures|All Active/Inactive|No Published Products|New Zealand|Found 1 results|
+

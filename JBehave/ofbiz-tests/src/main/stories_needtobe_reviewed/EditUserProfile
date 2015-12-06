@@ -1,0 +1,23 @@
+
+
+Scenario: Edit User profile
+
+Given that I logged into ofbiz site
+When I click "Change Password" link
+Then I see My Profile
+And I check the value of "First Name" as ""
+And I check the value of "Last Name" as ""
+And I enter "newtestskydiving" as "Old Password"
+And I enter <NewPassword>
+And I enter <verifyNewPassword>
+And I enter "" as "Password Hint"
+And I click the "Save Changes" button
+And I click "Logout" link
+And I log in with <NewPassword>
+And I see Product Search
+
+Example:
+|NewPasswrod|verifyNewPassword|
+||
+
+

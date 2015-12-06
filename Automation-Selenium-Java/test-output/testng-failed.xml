@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="2" name="Failed suite [UMP]">
+  <parameter name="sheetName" value="AMU"/>
+  <test name="Create Food with CUP as PMU and ML as AMU(failed)">
+    <parameter name="sheetName" value="AMU"/>
+    <classes>
+      <class name="FoodScripts.TestFoodCreate">
+        <methods>
+          <include name="testCreateFood" invocation-numbers="0"/>
+          <include name="incrementRowNumber"/>
+          <include name="stopWebdriverSession"/>
+          <include name="startWebdriverSession"/>
+        </methods>
+      </class> <!-- FoodScripts.TestFoodCreate -->
+      <class name="FoodScripts.TestFoodEdit">
+        <methods>
+          <include name="testEditFoodScreen" invocation-numbers="0"/>
+          <include name="startWebdriverSession"/>
+        </methods>
+      </class> <!-- FoodScripts.TestFoodEdit -->
+      <class name="FoodScripts.TestFoodDeducedMeasureUnits">
+        <methods>
+          <include name="BeforeMethod"/>
+          <include name="AfterMethod"/>
+          <include name="testCupAsPmuDashAsAmu"/>
+        </methods>
+      </class> <!-- FoodScripts.TestFoodDeducedMeasureUnits -->
+      <class name="FoodScripts.TestFoodSuperAdmin">
+        <methods>
+          <include name="testSuperAdmin" invocation-numbers="0"/>
+          <include name="startWebdriverSession"/>
+          <include name="stopWebdriverSession"/>
+        </methods>
+      </class> <!-- FoodScripts.TestFoodSuperAdmin -->
+    </classes>
+  </test> <!-- Create Food with CUP as PMU and ML as AMU(failed) -->
+</suite> <!-- Failed suite [UMP] -->

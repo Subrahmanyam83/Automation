@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="UMP" verbose="2" parallel="false" thread-count="1">
+
+
+	<test name="Create Food with CUP as PMU and ML as AMU" preserve-order="true">
+    	<classes>
+    		 <parameter name ="sheetName" value="AMU" />
+  			 <class name="FoodScripts.TestFoodCreate"></class>	
+  			   	<methods><include name="testCreateFood"></include></methods>
+  		 	 <class name="FoodScripts.TestFoodSuperAdmin"></class>	
+  		 		<methods><include name="testSuperAdmin"></include></methods>
+  		     <class name="FoodScripts.TestFoodDeducedMeasureUnits"></class>	
+  		 	    <methods><include name="testCupAsPmuDashAsAmu"></include></methods>	
+  		     <class name="FoodScripts.TestFoodEdit"></class>	
+  		     	<methods><include name="testEditFoodScreen"></include></methods>
+  		</classes>
+    </test> 
+  
+ 
+    
+</suite>
+
